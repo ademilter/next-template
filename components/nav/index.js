@@ -10,7 +10,7 @@ function Nav() {
       {Object.keys(PAGES).map((key) => {
         const PAGE = PAGES[key]
         return (
-          <Link href={PAGE.path}>
+          <Link href={PAGE.path} key={`link-${key}`}>
             <a>{PAGE.name}</a>
           </Link>
         )
