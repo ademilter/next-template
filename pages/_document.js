@@ -51,16 +51,20 @@ class MyDocument extends Document {
           />
 
           {/* analytic */}
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${SiteConfig.googleAnalytic}`}
-          />
-          <script
-            type="text/javascript"
-            dangerouslySetInnerHTML={{
-              __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '${SiteConfig.googleAnalytic}');`
-            }}
-          />
+          {SiteConfig.googleAnalytic && (
+            <>
+              <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${SiteConfig.googleAnalytic}`}
+              />
+              <script
+                type="text/javascript"
+                dangerouslySetInnerHTML={{
+                  __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '${SiteConfig.googleAnalytic}');`
+                }}
+              />
+            </>
+          )}
         </Head>
         <body>
           <Main />
