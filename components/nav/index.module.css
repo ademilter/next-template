@@ -1,0 +1,13 @@
+.nav {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+
+  a {
+    color: inherit;
+  }
+
+  a + a {
+    margin-left: 10px;
+  }
+}
