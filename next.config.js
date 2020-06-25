@@ -4,7 +4,6 @@ const withPWA = require('next-pwa')
 const isDev = process.env.NODE_ENV !== 'production'
 
 const nextConfig = {
-  exportTrailingSlash: true,
   env: {
     API_URL: isDev ? 'http://localhost:8000' : 'https://api.example.com/v1/'
   },
