@@ -1,4 +1,9 @@
-import React, { createContext, useEffect, useState } from 'react'
+import React, {
+  createContext,
+  useEffect,
+  useLayoutEffect,
+  useState
+} from 'react'
 import { THEME } from '../constants'
 
 const StoreContext = createContext(null)
@@ -6,7 +11,7 @@ const StoreContext = createContext(null)
 export function StoreProvider({ children }) {
   const [theme, themeSet] = useState(null)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const theme = localStorage.getItem('THEME') || THEME.LIGHT
     themeSet(theme)
   }, [])
