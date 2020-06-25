@@ -10,7 +10,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang={SiteConfig.lang}>
         <Head>
           {/* base */}
           <meta charSet="utf-8" />
@@ -51,16 +51,20 @@ class MyDocument extends Document {
           />
 
           {/* analytic */}
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${SiteConfig.googleAnalytic}`}
-          />
-          <script
-            type="text/javascript"
-            dangerouslySetInnerHTML={{
-              __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '${SiteConfig.googleAnalytic}');`
-            }}
-          />
+          {SiteConfig.googleAnalytic && (
+            <>
+              <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${SiteConfig.googleAnalytic}`}
+              />
+              <script
+                type="text/javascript"
+                dangerouslySetInnerHTML={{
+                  __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '${SiteConfig.googleAnalytic}');`
+                }}
+              />
+            </>
+          )}
         </Head>
         <body>
           <Main />

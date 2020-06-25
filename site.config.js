@@ -6,5 +6,6 @@ module.exports = {
   author: {
     email: 'ademilter@gmail.com',
     name: 'Adem ilter'
-  }
+  },
+  lang: 'en'
 }
