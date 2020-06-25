@@ -1,0 +1,36 @@
+{
+  "name": "twitter-web-react",
+  "version": "1.0.0",
+  "license": "ISC",
+  "scripts": {
+    "dev": "next",
+    "build:sb": "yarn run build-storybook",
+    "build:next": "NODE_ENV=production next build",
+    "build": "yarn run build:sb && yarn run build:next",
+    "start": "next start",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -o public/ui",
+    "icon": "svgr icons -d components/icons --icon"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "next": "^9.4.4",
+    "next-compose-plugins": "^2.2.0",
+    "next-pwa": "^2.6.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "@svgr/cli": "^5.4.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.2.1",
+    "prettier": "^2.0.5",
+    "style-loader": "^1.2.1"
+  }
+}

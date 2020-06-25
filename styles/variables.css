@@ -1,0 +1,10 @@
+:root {
+  --c-primary: white;
+  --c-text: black;
+  --fade: 120ms;
+}
+
+.theme-dark {
+  --c-primary: black;
+  --c-text: white;
+}

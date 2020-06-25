@@ -1,0 +1,6 @@
+.next
+node_modules
+.idea
+public/ui
+public/sw*
+public/workbox*

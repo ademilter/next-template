@@ -1,0 +1,12 @@
+.button {
+  cursor: pointer;
+  border-radius: 99px;
+  padding: 6px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--fade);
+  border: 1px solid;
+  background: transparent;
+  color: var(--c-text);
+}
