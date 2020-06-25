@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import Head from 'next/head'
 import StoreContext from '../store'
 
 import Layout from '../components/layout'
@@ -11,6 +12,10 @@ function HomePage() {
 
   return (
     <Layout>
+      <Head>
+        <title>Home Page</title>
+      </Head>
+
       <h1>Home page</h1>
 
       <br />
