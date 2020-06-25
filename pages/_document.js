@@ -10,7 +10,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang={SiteConfig.lang}>
         <Head>
           {/* base */}
           <meta charSet="utf-8" />
