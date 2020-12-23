@@ -10,8 +10,10 @@
     "start": "next start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o public/ui",
-    "icon": "svgr icons -d components/icons --icon"
+    "icon": "svgr icons -d components/icons --icon",
+    "lint-staged": "lint-staged"
   },
+  "pre-commit": "lint-staged",
   "dependencies": {
     "classnames": "^2.2.6",
     "next": "^9.5.1",
@@ -27,9 +29,11 @@
     "@svgr/cli": "^5.4.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.2.0",
+    "lint-staged": "^10.5.3",
     "postcss-custom-media": "^7.0.8",
     "postcss-loader": "^3.0.0",
     "postcss-nested": "^4.2.3",
+    "pre-commit": "^1.2.2",
     "prettier": "^2.0.5",
     "style-loader": "^1.2.1"
   }
