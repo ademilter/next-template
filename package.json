@@ -16,7 +16,7 @@
   "pre-commit": "lint-staged",
   "dependencies": {
     "classnames": "^2.2.6",
-    "next": "^9.5.1",
+    "next": "^10.0.4",
     "next-compose-plugins": "^2.2.0",
     "next-pwa": "^3.1.1",
     "react": "^16.13.1",
