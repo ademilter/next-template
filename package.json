@@ -4,21 +4,26 @@
   "license": "ISC",
   "scripts": {
     "dev": "next",
+    "build": "NODE_ENV=production next build",
     "start": "next start",
     "icon": "svgr icons -d components/icons --icon"
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "next": "^9.5.1",
-    "next-compose-plugins": "^2.2.0",
-    "next-pwa": "^3.1.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "next": "^10.0.4",
+    "next-compose-plugins": "^2.2.1",
+    "next-pwa": "^5.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@svgr/cli": "^5.5.0",
     "postcss-custom-media": "^7.0.8",
-    "postcss-loader": "^3.0.0",
-    "postcss-nested": "^4.2.3",
-    "prettier": "^2.0.5",
+    "postcss-loader": "^4.1.0",
+    "postcss-nested": "^5.0.3",
+    "prettier": "^2.2.1"
+  },
+  "peerDependencies": {
+    "postcss": "8.2.1"
   }
 }
